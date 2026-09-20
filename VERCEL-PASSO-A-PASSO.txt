@@ -1,0 +1,30 @@
+V15 - DEPLOY SEGURO NO VERCEL
+
+1. No GitHub, a RAIZ do repositório deve conter diretamente:
+   index.html
+   vercel.json
+   package.json
+   projects/
+   data/
+   api/
+
+2. NÃO envie apenas o index.html. Envie a pasta projects inteira também.
+
+3. No Vercel:
+   - Add New > Project
+   - Importe o repositório correto
+   - Framework Preset: Other
+   - Root Directory: ./ (raiz)
+   - Build Command: deixe vazio
+   - Output Directory: deixe vazio
+   - Install Command: deixe vazio
+   - Deploy
+
+4. Depois do deploy teste:
+   /
+   /projects/architecture/preview/01-locacao-situacao.jpg
+   /projects/architecture/pdf/01-locacao-situacao.pdf
+
+5. Se a tela aparecer sem estilo, abra o código-fonte da página publicada e confirme que existe um bloco <style> grande dentro do index.html. Na V15 CSS e JavaScript estão embutidos no index.html, portanto não dependem da pasta assets para a interface.
+
+6. Se o Vercel estiver apontando para uma subpasta errada, altere Settings > General > Root Directory para a pasta que contém o index.html e faça Redeploy.

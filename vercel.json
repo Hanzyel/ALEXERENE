@@ -5,32 +5,14 @@
     {
       "source": "/projects/architecture/pdf/(.*).pdf",
       "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/pdf"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=3600"
-        }
+        {"key": "Content-Type", "value": "application/pdf"},
+        {"key": "Cache-Control", "value": "public, max-age=3600"}
       ]
     },
     {
       "source": "/projects/architecture/preview/(.*).jpg",
       "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=86400, immutable"
-        }
-      ]
-    },
-    {
-      "source": "/assets/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=3600"
-        }
+        {"key": "Cache-Control", "value": "public, max-age=86400, immutable"}
       ]
     }
   ]
