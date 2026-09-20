@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#133a3d">
+<title>Controle Executivo da Obra | Residência de Alto Padrão</title>
+<link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+<div id="errorbox" class="errorbox"></div>
+<div class="app" id="app">
+  <aside class="sidebar">
+    <div class="brandless-head">
+      <div class="brandless-icon">⌂</div>
+      <div><span>Painel da obra</span><strong>Residência de alto padrão</strong></div>
+    </div>
+    <div class="project-mini"><div class="eyebrow">obra monitorada</div><strong id="sideClient"></strong><small id="sideMeta"></small></div>
+    <nav class="nav" id="nav"></nav>
+    <div class="sidebar-foot">Controle executivo da obra<br>Custos · medições · evolução física</div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div><h1 id="pageTitle">Executivo</h1><div class="crumb" id="crumb"></div></div><div class="actions"><button class="btn help-toggle" id="helpToggle">Ocultar explicações</button><button class="btn primary" onclick="go('relatorio')">Relatório da Obra</button></div></header>
+    <div class="content" id="content"></div>
+  </main>
+</div>
+<script src="./assets/app.js" defer></script>
+</body></html>
