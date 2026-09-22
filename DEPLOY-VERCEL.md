@@ -1,11 +1,8 @@
-# Publicar no Vercel
+# Atualização no Vercel
 
-1. Crie um repositório no GitHub e envie todos os arquivos desta pasta para a raiz do repositório.
-2. Acesse o Vercel, escolha **Add New > Project** e importe o repositório.
-3. Em **Framework Preset**, use **Other** (site estático).
-4. Não defina Build Command nem Output Directory. A raiz já contém `index.html`.
-5. Clique em **Deploy**.
-6. Depois do deploy, abra `/projetos` pelo menu do dashboard e valide uma prancha.
-7. Teste também `/api/projects` para confirmar que a API do catálogo respondeu.
-8. Para domínio próprio, abra **Project Settings > Domains** e adicione seu domínio.
-9. A cada `git push` na branch de produção, o Vercel publica uma nova versão automaticamente.
+1. Substitua o `index.html` do repositório pela versão V20.
+2. Se as pastas `projects/architecture/pdf` e `projects/architecture/preview` já existem no GitHub, elas podem ser mantidas.
+3. Faça commit e push para a branch conectada ao Vercel.
+4. Aguarde o novo deployment automático.
+5. Abra o site em janela anônima ou faça `Ctrl+F5` para evitar cache antigo.
+6. Confira as abas Executivo, Orçamento × Real, Financiamento, Relatório de Obra e Projetos.
